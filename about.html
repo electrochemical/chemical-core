@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+    body {font-family: sans-serif;} * {text-align: center;}
+    </style>
+</head>
+<body>
+<!--TODO: align center-->
+    <b id="name"></b>
+    <p id="ver"></p>
+    <p id="desc"></p>
+    See the <a id="license"></a> for details.
+    <script>
+    var args = {}
+    window.location.href.split('?').slice(-1)[0].split(';').forEach(function(val) {
+        var vals = val.split('=')
+        args[vals[0]] = vals[1]
+    })
+    var license = document.getElementById('license')
+    license.href = licenses = require('./licenses')[license] //TODO: open in default browser, word-wrap, icon
+    license.innerHTML = args.lic + ' License'
+    document.getElementById('name').innerHTML = args.name
+    document.getElementById('ver').innerHTML = args.ver
+    document.getElementById('desc').innerHTML = args.desc.replace(/%20/g, ' ')
+    </script>
+</body>
+</html>

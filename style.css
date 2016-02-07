@@ -1,0 +1,41 @@
+/*TODO: flex for stuff*/
+html {
+    height: 100%
+}
+* {
+    cursor: default;
+}
+body {
+    margin: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100%
+}
+ul {
+    list-style: none;
+    display: inline-flex;
+    padding: 0;
+}
+#toolbar {
+    flex: 0 1 auto;
+}
+#tabbar {
+    flex: 0 1 auto;
+}
+#tabs {
+    flex: 1 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+}
+#tabs li {
+    display: flex;
+    flex-flow: row nowrap;
+}
+#toolbar li {
+    height: 32px;
+    width: 32px;
+    color: #888;
+}
+#tabs.multiline {
+    flex-flow: row wrap;
+}

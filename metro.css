@@ -1,0 +1,38 @@
+table {
+    width: 100%;
+    height: 100%;
+    table-layout: fixed;
+    word-wrap: break-word;
+}
+td.h {
+    colspan: 1;
+    rowspan: 1;
+}
+td.h2 {
+    colspan: 2;
+    rowspan: 1;
+}
+td.he {
+    colspan: 2;
+    rowspan: 2;
+}
+td.he2 {
+    colspan: 2;
+    rowspan: 4;
+}
+td.be {
+    colspan: 3;
+    rowspan: 3;
+}
+td.be2 {
+    colspan: 3;
+    rowspan: 6;
+}
+td.o {
+    colspan: 4;
+    rowspan: 4;
+}
+td.o2 {
+    colspan: 4;
+    rowspan: 8;
+}
